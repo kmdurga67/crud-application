@@ -1,19 +1,26 @@
 {
-  "posts": [
+  "foods": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": "184e",
+      "foodMenu": "Veg",
+      "foodName": "Burger",
+      "foodImageUrl": "https://png.pngtree.com/png-clipart/20221001/ourmid/pngtree-fast-food-big-ham-burger-png-image_6244235.png",
+      "quantity": "2",
+      "oldPrice": "24",
+      "newPrice": "80",
+      "description": "Burger",
+      "addedDate": "2024-04-25"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "392a",
+      "foodMenu": "Non-Veg",
+      "foodName": "Burger",
+      "foodImageUrl": "https://png.pngtree.com/png-clipart/20221001/ourmid/pngtree-fast-food-big-ham-burger-png-image_6244235.png",
+      "quantity": "2",
+      "oldPrice": "24",
+      "newPrice": "80",
+      "description": "Burger",
+      "addedDate": "2024-04-25"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
