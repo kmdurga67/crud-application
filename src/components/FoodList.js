@@ -55,10 +55,10 @@ function FoodList() {
             {foods.map((food) => (
               <tr key={food.id}>
                 <td className="border-b border-gray-400 px-4 py-2">
-                  {food.foodName}
+                  {food.foodMenu}
                 </td>
                 <td className="border-b border-gray-400 px-4 py-2">
-                  {food.foodMenu}
+                  {food.foodName}
                 </td>
                 <td className="border-b border-gray-400 px-4 py-2">
                   <img
