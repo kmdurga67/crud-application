@@ -1,17 +1,6 @@
 {
   "foods": [
     {
-      "id": "184e",
-      "foodMenu": "Veg",
-      "foodName": "Burger",
-      "foodImageUrl": "https://png.pngtree.com/png-clipart/20221001/ourmid/pngtree-fast-food-big-ham-burger-png-image_6244235.png",
-      "quantity": "2",
-      "oldPrice": "24",
-      "newPrice": "80",
-      "description": "Burger",
-      "addedDate": "2024-04-25"
-    },
-    {
       "id": "392a",
       "foodMenu": "Non-Veg",
       "foodName": "Burger",
@@ -21,6 +10,17 @@
       "newPrice": "80",
       "description": "Burger",
       "addedDate": "2024-04-25"
+    },
+    {
+      "id": "46a6",
+      "foodMenu": "Veg",
+      "foodName": "Pizza",
+      "foodImageUrl": "https://t3.ftcdn.net/jpg/06/11/01/26/360_F_611012694_YztSwcyDjHflPhlil3LfeSDXMtew2Scy.jpg",
+      "quantity": "1",
+      "oldPrice": "99",
+      "newPrice": "149",
+      "description": "Pizza is very delicious",
+      "addedDate": "2024-04-24"
     }
   ]
 }

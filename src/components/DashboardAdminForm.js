@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-function DashboardAdminForm() {
+const DashboardAdminForm = () => {
   const [foodMenu, setFoodMenu] = useState('');
   const [foodName, setFoodName] = useState('');
   const [foodImageUrl, setFoodImageUrl] = useState('');
@@ -10,6 +11,7 @@ function DashboardAdminForm() {
   const [newPrice, setNewPrice] = useState('');
   const [description, setDescription] = useState('');
   const [addedDate, setAddedDate] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +28,7 @@ function DashboardAdminForm() {
       });
       console.log('Food added successfully:', response.data);
       alert('Food added successfully');
+      navigate("/food-list");
     } catch (error) {
       console.error('Error adding food:', error);
       alert('Error adding food');
@@ -44,7 +47,7 @@ function DashboardAdminForm() {
   };
 
   return (
-    <div className="bg-gray-200 p-4 mt-6">
+    <div className="p-4 mt-6 h-screen">
       <h1 className="text-xl font-bold mb-4">Admin Settings</h1>
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4">

@@ -4,6 +4,7 @@ import Sidebar from './components/SideBar';
 import Header from './components/Header';
 import DashboardAdminForm from './components/DashboardAdminForm';
 import "./App.css";
+import FoodList from './components/FoodList';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<DashboardAdminForm /> } />
+            <Route path='/food-list' element={<FoodList />} />
             </Routes>
         </div>
       </div>
