@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function FoodList() {
   const [foods, setFoods] = useState([]);
@@ -88,9 +89,12 @@ function FoodList() {
                   >
                     Delete
                   </button>
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  <Link
+                    to={`/edit-food/${food.id}`}
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+                  >
                     Edit
-                  </button>
+                  </Link>
                 </td>
               </tr>
             ))}

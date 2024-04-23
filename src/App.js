@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<DashboardAdminForm /> } />
             <Route path='/food-list' element={<FoodList />} />
+            <Route path={`/edit-food/:id`} element={<DashboardAdminForm /> } />
             </Routes>
         </div>
       </div>
